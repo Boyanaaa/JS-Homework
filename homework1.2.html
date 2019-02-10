@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 1 Задача 2</title>
+
+   <!--  //Напишете скрипт, който пита посетителя от коя държава е. Посетителят въвежда кода на държавата: BG, UK и в страницата се извежда поздрав на езика на държавата. Предвидете и случай, в който нямате поздрав за съответния код. 
+    (Сравненията на тесктове в JS са чувсвтителни към регистъра. "bg" != "BG".) -->
+        
+    <script>
+        
+       var question = 'What is your country code!'
+                    + ' NB: Use capital letters! i.e.: BG, UK, RO, RU, etc...';
+       var userChoice = window.prompt(question);            
+       
+       if(userChoice === 'BG'){
+        document.write('Здравейте!');
+
+       } else if (userChoice === 'UK') {
+
+        document.write('Hello!');
+    } else if (userChoice === 'IT'){
+        document.write('Ciao!');
+    } else {
+        document.write('We do not support your language :(');
+        document.write('<img src = ./images/hello1.jpg />');
+    } 
+
+    </script>
+</head>
+<body>
+        
+</body>
+</html>

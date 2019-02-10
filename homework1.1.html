@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework 1 Задача 1.1</title>
+	<script>
+        
+        
+        var message = 'Моля, въведете името нa избраната от вас снимка:'  + ' kitty, kitty2, puppy или puppy2';
+        var userChoice = window.prompt(message);
+        
+		document.write('<img src = " ./images/' + userChoice + '.jpg" />');
+        
+        if(userChoice === '' || userChoice === null){ //Когато посетителят кликне на ОК или Cancel без да въвежда име на снимка.
+
+            document.write('<img src = ./images/default.jpg />');
+        } // Въпреки, че default-ната картинка се извежда на екрана,
+          // съобщение за грешка излиза в конзолата: "net::ERR_FILE_NOT_FOUND"
+
+        
+        
+        
+	</script>
+</head>
+<body>
+        
+</body>
+</html>
